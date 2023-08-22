@@ -1,6 +1,5 @@
 function Letters() {
-    return(
-  const letters = {
+  return {
     alphabet: [
       "A",
       "B",
@@ -198,7 +197,6 @@ function Letters() {
       "T",
     ],
   };
-  )
 }
 
 export default Letters;
