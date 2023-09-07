@@ -1,5 +1,5 @@
 function Letters() {
-  return {
+  const letters = {
     alphabet: [
       "A",
       "B",
@@ -196,6 +196,10 @@ function Letters() {
       "A",
       "T",
     ],
+  };
+
+  return {
+    letters,
   };
 }
 
