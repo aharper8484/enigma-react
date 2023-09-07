@@ -2,7 +2,7 @@ function OutputCode({ result }) {
   return (
     <div>
       <form>
-        <label for="decrypted">Result</label>
+        <label for="decrypted">Decrypted Code</label>
         <textarea type="text" id="decrypted" name="decrypted" value={result} />
       </form>
     </div>

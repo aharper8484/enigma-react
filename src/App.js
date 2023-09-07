@@ -15,16 +15,21 @@ function App() {
         <p>Made with React</p>
       </header>
       <div>
+        <InputCode
+          encryptionText={encryption}
+          onChange={(e) => setEncryption(e.target.value)}
+        ></InputCode>
+        <p>Plugboard</p>
+        <p>Static Wheel</p>
+        <p>Fast Wheel</p>
+        <p>Medium Wheel</p>
+        <p>Slow Wheel</p>
         <p>Reflector</p>
         <p>Slow Wheel</p>
         <p>Medium Wheel</p>
         <p>Fast Wheel</p>
         <p>Static Wheel</p>
         <p>Plugboard</p>
-        <InputCode
-          encryptionText={encryption}
-          onChange={(e) => setEncryption(e.target.value)}
-        ></InputCode>
         <OutputCode result={encryption}></OutputCode>
       </div>
     </div>

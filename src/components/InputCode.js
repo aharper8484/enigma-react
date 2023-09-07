@@ -5,7 +5,7 @@ function InputCode({ encryptionText, onChange }) {
     <div>
       <form>
         <label for="encryption">Code for Encryption:</label>
-        <input
+        <textarea
           type="text"
           id="encryption"
           name="encryption"
