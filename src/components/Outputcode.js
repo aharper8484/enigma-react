@@ -1,9 +1,9 @@
-function OutputCode() {
+function OutputCode({ result }) {
   return (
     <div>
       <form>
         <label for="decrypted">Result</label>
-        <input type="text" id="decrypted" name="decrypted" />
+        <textarea type="text" id="decrypted" name="decrypted" value={result} />
       </form>
     </div>
   );

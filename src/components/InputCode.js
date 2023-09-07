@@ -1,8 +1,6 @@
 import { useState } from "react";
 
-function InputCode() {
-  const [encryption, setEncryption] = useState("");
-
+function InputCode({ encryptionText, onChange }) {
   return (
     <div>
       <form>
@@ -11,8 +9,8 @@ function InputCode() {
           type="text"
           id="encryption"
           name="encryption"
-          value={encryption}
-          onChange={(e) => setEncryption(e.target.value)}
+          value={encryptionText}
+          onChange={onChange}
         />
       </form>
     </div>

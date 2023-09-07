@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 import "./components/Letters";
 import "./components/InputCode";
@@ -5,6 +6,8 @@ import InputCode from "./components/InputCode";
 import OutputCode from "./components/Outputcode";
 
 function App() {
+  const [encryption, setEncryption] = useState("");
+
   return (
     <div className="App">
       <header className="App-header">
@@ -18,8 +21,11 @@ function App() {
         <p>Fast Wheel</p>
         <p>Static Wheel</p>
         <p>Plugboard</p>
-        <InputCode></InputCode>
-        <OutputCode></OutputCode>
+        <InputCode
+          encryptionText={encryption}
+          onChange={(e) => setEncryption(e.target.value)}
+        ></InputCode>
+        <OutputCode result={encryption}></OutputCode>
       </div>
     </div>
   );
